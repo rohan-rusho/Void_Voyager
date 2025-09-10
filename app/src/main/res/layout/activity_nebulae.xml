@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollNebulae"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:id="@+id/containerNebulae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp"
+        android:paddingBottom="80dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTitleNebulae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="30dp"
+            cardView:cardElevation="14dp"
+            cardView:cardBackgroundColor="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="32dp"
+                android:background="@drawable/card_bg">
+
+                <ImageView
+                    android:id="@+id/imgNebulae"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:src="@drawable/ic_nebulae"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:id="@+id/tvNebulaeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nebulae"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Definition -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNebulaeDefinition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingNebulaeDefinition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Definition"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#AEEA00"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textNebulaeDefinition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nebulae are vast clouds of gas and dust in space—stellar nurseries where new stars form, or glowing shells created by dying stars. They can emit their own light, reflect starlight, or appear dark by blocking what lies behind."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Types -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNebulaeTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingNebulaeTypes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Main Types"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textNebulaeTypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Emission Nebula: Glows from ionized gas (e.g., Orion Nebula)\n• Reflection Nebula: Dust reflects nearby starlight (blue tint)\n• Dark Nebula: Dense clouds blocking light (e.g., Horsehead)\n• Planetary Nebula: Outer layers of a dying Sun-like star\n• Supernova Remnant: Expanding debris from a stellar explosion\n• Molecular Cloud: Cold, dense star-forming region"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Star Formation -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNebulaeFormation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingNebulaeFormation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Star Formation"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textNebulaeFormation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gravity causes clumps in cold molecular clouds to collapse into protostars. As density and temperature rise, fusion begins—creating a new star. Stellar winds and radiation then sculpt the remaining gas into dramatic shapes."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Why Nebulae Matter -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNebulaeImportance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingNebulaeImportance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Why Nebulae Matter"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textNebulaeImportance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nebulae recycle material from old stars and forge the next generation. They are key to understanding stellar evolution, chemical enrichment, and the birthplaces of potential planetary systems."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Fun Facts -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNebulaeFunFacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingNebulaeFunFacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fun Facts"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textNebulaeFunFacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• The Orion Nebula is visible with small telescopes.\n• Pillars of Creation are part of the Eagle Nebula.\n• Planetary nebulae have nothing to do with planets—the name is historical.\n• Supernova remnants enrich space with heavy elements.\n• Infrared telescopes reveal stars hidden in dust."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Explore CTA -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNebulaeExplore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/headingNebulaeExplore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore the Nebulae!"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textNebulaeExplore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trace the cosmic cycle: clouds collapse into stars, stars enrich space, and new worlds emerge from the glowing remains."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Share Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnShareNebulae"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Share"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:background="@drawable/card_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollStars"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:id="@+id/containerStars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp"
+        android:paddingBottom="80dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTitleStars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="30dp"
+            cardView:cardElevation="14dp"
+            cardView:cardBackgroundColor="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="32dp"
+                android:background="@drawable/card_bg">
+
+                <ImageView
+                    android:id="@+id/imgStars"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:src="@drawable/ic_stars"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:id="@+id/tvStarsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stars"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Definition -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStarsDefinition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingStarsDefinition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Definition"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#AEEA00"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textStarsDefinition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stars are massive, glowing spheres of hot plasma powered by nuclear fusion in their cores. They form inside clouds of gas and dust and shine for millions to trillions of years depending on their mass."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Life Cycle -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStarsLifeCycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingStarsLifeCycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Life Cycle"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textStarsLifeCycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Stellar Nebula → Protostar\n• Main Sequence (fusion of H → He)\n• Red Giant or Supergiant\n• Final Fate:\n   - Sun-like: White Dwarf → (Black Dwarf eventually)\n   - Massive: Supernova → Neutron Star or Black Hole"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Types of Stars -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStarsTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingStarsTypes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Star Types (Spectral)"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textStarsTypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="O • B • A • F • G • K • M\n(O hottest / blue → M coolest / red)\nOur Sun is a G-type (G2V) main-sequence star."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Why Stars Matter -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStarsImportance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingStarsImportance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Why Stars Matter"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textStarsImportance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stars forge heavier elements (carbon, oxygen, iron) through fusion and supernova explosions—these elements become planets, life, and even you. Their energy stabilizes planetary climates and drives chemical evolution."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Fun Facts -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStarsFunFacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingStarsFunFacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fun Facts"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textStarsFunFacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Betelgeuse is a red supergiant that will go supernova.\n• Neutron stars pack Sun-like mass into a city size.\n• The Sun is ~4.6 billion years old, middle-aged.\n• Most stars in the Milky Way are red dwarfs.\n• Some stars form in pairs (binary systems)."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Explore CTA -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStarsExplore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/headingStarsExplore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore the Stars!"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textStarsExplore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Discover how stars are born, live, and die—and how their cosmic recycling builds new worlds and possibilities."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Share Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnShareStars"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Share"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:background="@drawable/card_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+</ScrollView>

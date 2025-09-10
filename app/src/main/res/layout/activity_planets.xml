@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollPlanets"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:id="@+id/containerPlanets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp"
+        android:paddingBottom="80dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="30dp"
+            cardView:cardElevation="14dp"
+            cardView:cardBackgroundColor="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="32dp"
+                android:background="@drawable/card_bg">
+
+                <ImageView
+                    android:id="@+id/imgPlanet"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:src="@drawable/ic_planet"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="12dp"
+                    cardView:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvPlanetTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Planets"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Definition -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDefinition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingDefinition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Definition"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#AEEA00"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textDefinition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Planets are large, round objects in space that orbit stars. In our solar system, there are 8 recognized planets orbiting the Sun."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- List of Planets -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardListPlanets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingListPlanets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Planets in Our Solar System"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textListPlanets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Mercury\n• Venus\n• Earth\n• Mars\n• Jupiter\n• Saturn\n• Uranus\n• Neptune"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Why Planets Matter -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImportance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingImportance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Why Planets Matter"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textImportance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Planets are fascinating worlds, each unique. They teach us about our solar system, the origins of life, and the universe."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Fun Facts -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFunFacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingFunFacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fun Facts"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textFunFacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Jupiter is the largest planet in our solar system.\n• Venus is the hottest planet.\n• Mars is called the Red Planet.\n• Neptune has the strongest winds."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Explore CTA -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardExplore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/headingExplore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore the Planets!"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textExplore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Learn more about each planet and how they make our solar system so amazing."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Share Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSharePlanets"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Share"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:background="@drawable/card_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+</ScrollView>

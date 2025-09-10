@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollGalaxies"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:id="@+id/containerGalaxies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp"
+        android:paddingBottom="80dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTitleGalaxies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="30dp"
+            cardView:cardElevation="14dp"
+            cardView:cardBackgroundColor="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="32dp"
+                android:background="@drawable/card_bg">
+
+                <ImageView
+                    android:id="@+id/imgGalaxies"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:src="@drawable/ic_galaxy"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:id="@+id/tvGalaxiesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Galaxies"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Definition -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGalaxiesDefinition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingGalaxiesDefinition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Definition"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#AEEA00"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textGalaxiesDefinition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Galaxies are immense gravitationally bound systems containing stars, stellar remnants, gas, dust, dark matter, and sometimes supermassive black holes. They range from dwarf galaxies with millions of stars to giants with trillions."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Main Types -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGalaxiesTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingGalaxiesTypes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Main Galaxy Types"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textGalaxiesTypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Spiral: Flattened disk + central bulge (e.g., Milky Way)\n• Barred Spiral: Central bar of stars\n• Elliptical: Spheroidal, older stars, little gas\n• Irregular: Chaotic shape, active star formation\n• Dwarf: Small galaxies, crucial building blocks"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Structure -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGalaxiesStructure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingGalaxiesStructure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Typical Structure"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textGalaxiesStructure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Dark Matter Halo: Invisible mass shaping rotation\n• Disk: Stars, gas, dust forming arms\n• Bulge: Dense central region\n• Bar (if present): Elongated stellar core\n• Nucleus: Often a supermassive black hole"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Why Galaxies Matter -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGalaxiesImportance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingGalaxiesImportance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Why Galaxies Matter"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textGalaxiesImportance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Galaxies are star and element factories. Their interactions drive evolution: mergers can trigger starbursts, feed black holes, and reshape structure—ultimately influencing where planetary systems and life may arise."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Fun Facts -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGalaxiesFunFacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingGalaxiesFunFacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fun Facts"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textGalaxiesFunFacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Milky Way &amp; Andromeda will merge in ~4–5 billion years.\n• Some galaxies host quasars—extremely bright active nuclei.\n• Dwarf galaxies outnumber large ones.\n• Ellipticals can be mostly old red stars.\n• Dark matter dominates most galactic mass."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Explore CTA -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGalaxiesExplore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/headingGalaxiesExplore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore the Galaxies!"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textGalaxiesExplore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Journey across spirals, dwarfs, and colossal ellipticals—each one a sprawling cosmic city of stars shaping the universe."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Share Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnShareGalaxies"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Share"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:background="@drawable/card_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+</ScrollView>

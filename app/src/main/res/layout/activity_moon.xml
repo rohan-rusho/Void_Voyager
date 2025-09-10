@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollMoons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:id="@+id/containerMoons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp"
+        android:paddingBottom="80dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTitleMoons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="30dp"
+            cardView:cardElevation="14dp"
+            cardView:cardBackgroundColor="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="32dp"
+                android:background="@drawable/card_bg">
+
+                <ImageView
+                    android:id="@+id/imgMoon"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:src="@drawable/ic_moons"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="12dp"
+                    android:contentDescription="Moons" />
+
+                <TextView
+                    android:id="@+id/tvMoonsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moons"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Definition -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMoonsDefinition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingMoonsDefinition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Definition"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#AEEA00"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textMoonsDefinition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Moons (natural satellites) are objects that orbit planets or dwarf planets. They vary widely in size, composition, and activity—from icy ocean worlds to volcanic rocky bodies."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Notable Moons -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMoonsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingMoonsList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notable Moons"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textMoonsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Earth: The Moon\n• Jupiter: Io, Europa, Ganymede, Callisto\n• Saturn: Titan, Enceladus, Mimas\n• Neptune: Triton\n• Pluto (dwarf planet): Charon\n• Mars: Phobos &amp; Deimos"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Why Moons Matter -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMoonsImportance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingMoonsImportance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Why Moons Matter"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textMoonsImportance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Moons help scientists understand planetary formation, internal heating, potential habitability, and even the history of our own planet through tidal effects."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Fun Facts -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMoonsFunFacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/headingMoonsFunFacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fun Facts"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textMoonsFunFacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Ganymede is the largest moon in the Solar System.\n• Titan has lakes of liquid methane &amp; ethane.\n• Europa likely has a subsurface ocean.\n• Io is the most volcanically active body known.\n• Enceladus ejects water plumes into space."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Explore CTA -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMoonsExplore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="6dp"
+            cardView:cardBackgroundColor="@color/card_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/headingMoonsExplore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore the Moons!"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#ffd600"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textMoonsExplore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Each moon tells a story—some hide oceans, some erupt lava, others glow with icy shells. Dive deeper into their mysteries."
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Share Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnShareMoons"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Share"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:background="@drawable/card_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+</ScrollView>

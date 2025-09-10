@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Void Voyager</string>
+    <string name="app_header_planetquest">PlanetQuest</string>
+    <string name="app_tagline_planetquest">Explore worlds, stars, and cosmic mysteries</string>
+
+    <!-- Module titles -->
+    <string name="module_planets_title">Planets</string>
+    <string name="module_moons_title">Moons</string>
+    <string name="module_stars_title">Stars</string>
+    <string name="module_galaxies_title">Galaxies</string>
+    <string name="module_nebulae_title">Nebulae</string>
+    <string name="module_missions_title">Missions</string>
+
+    <!-- Subtitles -->
+    <string name="module_planets_sub">Our solar neighbors</string>
+    <string name="module_moons_sub">Natural satellites</string>
+    <string name="module_stars_sub">Stellar life cycles</string>
+    <string name="module_galaxies_sub">Massive star systems</string>
+    <string name="module_nebulae_sub">Cosmic nurseries</string>
+    <string name="module_missions_sub">Human exploration</string>
+</resources>

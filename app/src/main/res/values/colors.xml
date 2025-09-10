@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Main deep purple (from background startColor) -->
+    <color name="primary">#5f0d33</color>
+
+    <!-- Background dark (a rich, dark magenta for surfaces) -->
+    <color name="background_dark">#2D093E</color>
+
+    <!-- Card background: vibrant magenta (from background endColor) -->
+    <color name="card_bg">#F50057</color>
+
+    <!-- Material Design primary (vivid accent magenta) -->
+    <color name="md_primary">#F50057</color>
+
+    <!-- Material Design primary dark (deep purple) -->
+    <color name="md_primaryDark">#4D0023</color>
+
+    <!-- Accent: vivid orange-pink (from top glow) -->
+    <color name="accent">#C55200</color>
+
+    <!-- Optional: edge vignette (from vignette color) -->
+    <color name="vignette_purple">#6A1B9A</color>
+
+    <!-- Bottom shadow band: deep pink -->
+    <color name="bottom_shadow">#4E082F</color>
+</resources>
